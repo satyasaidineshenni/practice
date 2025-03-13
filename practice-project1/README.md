@@ -14,7 +14,7 @@ If you are developing a production application, we recommend using TypeScript an
 ## Virtual DOM, Fibre, Reconciliation(Written by me)
 
 createRoot- creates DOM like structure
-Reconciliation- The algorithm React uses to differentiate one tree with another to determine which parts need to be changed
+Reconciliation- The algorithm React uses to differentiate one tree with another to determine which parts need to be changed.
 **Reconciliation is the algorithm behind what is popularly understood as "Virtual DOM".**
 
 Fibre came into picture beacause instead of updating the every state in every time, we can wait for some time and can directly update the last state.(I thought like this and asked copilot and it said i was close to the approach and explained the main moto of fibre in react)
