@@ -1,7 +1,9 @@
 /* @import "tailwindcss"; */
+body {
+  background-image: linear-gradient(to top, rgb(67, 66, 64), rgb(225, 64, 91));
+}
 
 .mainDiv {
-  background-image: linear-gradient(to top, rgb(67, 66, 64), rgb(225, 64, 91));
   display: flex;
   flex-direction: column;
 }
@@ -18,7 +20,43 @@
   justify-content: space-between;
 }
 .Card {
-  width: 80%;
   margin: 30px;
-  background-color: aliceblue;
+  background-color: rgb(202, 81, 81);
+}
+.buttonClass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modalButton {
+  width: 80px;
+  height: auto;
+  color: wheat;
+  background-color: black;
+  padding: 4px;
+  border-radius: 8px;
+  border: 2px dashed red;
+  cursor: pointer;
+}
+.Modal1 {
+  position: fixed;
+  z-index: 1000;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 10px;
+  /* position,z-index,bgcolor,top,left important,transform*(to align the modal correctly) */
+}
+.overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  /* Same properties used for modal1 but add width,height to cover whole background */
 }
