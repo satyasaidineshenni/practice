@@ -38,6 +38,14 @@ body {
   border: 2px dashed red;
   cursor: pointer;
 }
+.preview {
+  text-decoration: underline;
+  color: black;
+  cursor: pointer;
+  &:hover {
+    color: white;
+  }
+}
 .Modal1 {
   position: fixed;
   z-index: 1000;

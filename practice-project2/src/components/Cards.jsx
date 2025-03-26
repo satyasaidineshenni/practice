@@ -19,8 +19,8 @@ function Cards(props) {
           {props.name} {props.number}
         </div>
         <div className="buttonClass">
-          <button className="modalButton" onClick={showModal}>
-            Preview
+          <button className="preview" onClick={showModal}>
+          👁️Preview
           </button>
         </div>
       </div>
